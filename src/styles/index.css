@@ -9,3 +9,18 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body {
+    background-image: url(https://png.pngtree.com/background/20250103/original/pngtree-textured-crumpled-paper-background-with-copy-space-isolated-on-a-white-picture-image_13468466.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.listas {
+    list-style-type: none;
+    padding-left: 0px;
+}
+h1{
+    font-size: 110px;
+    font-weight: lighter;
+    color: rosybrown;
+}
