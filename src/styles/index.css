@@ -24,3 +24,11 @@ h1{
     font-weight: lighter;
     color: rosybrown;
 }
+.fa-solid{
+     opacity: 0;
+    transition: opacity 0.3s ease; 
+    margin-right: 10px;
+}
+.hover:hover .fa-solid{
+    opacity: 1;
+}

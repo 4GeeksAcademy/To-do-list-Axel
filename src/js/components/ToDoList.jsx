@@ -2,7 +2,7 @@ import React, { useState } from "react";
 //create your first component
 const ToDoList = () => {
 
-	const [tasks, setTasks] = useState(['perro', 'gato', 'poyo']);
+	const [tasks, setTasks] = useState(['sleep']);
 	const [addTask, setAddTask] = useState('');
 
 	function inputChange(e) {
@@ -30,8 +30,8 @@ const ToDoList = () => {
 			</div>
 			<div className="card-body p-0 text-start">
 				<ul className="listas">
-					{tasks.map((task, index) =>
-						<div className="w-100 border-bottom p-3"><li className="d-flex justify-content-between align-items-center" id={index}>{task}<i
+					{tasks == '' ?  <p className="text-center">No hay tareas, añadir tareas.</p> : tasks.map((task, index) =>
+						<div className="w-100 border-bottom p-3"><li className="d-flex justify-content-between hover align-items-center" id={index}>{task}<i
 							onClick={() => removeTasks(index)}
 							className="fa-solid fa-xmark" style={{color : 'red'}}></i></li></div>)}
 				</ul>
